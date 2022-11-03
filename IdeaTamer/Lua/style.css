@@ -1,0 +1,195 @@
+header{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "logo navbar";
+    background-color: white;
+}
+.a-color{
+    color: #b7b5ff;
+   text-decoration-color: #b7b5ff;
+   text-decoration: solid;
+}
+.logo-r{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.logo{
+    height:50px;
+}
+main{
+    background-color: #b7b5ff;
+}
+.portada{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+@media only screen and (max-width:500px){
+    .portada{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+    }
+    .imgPortada{
+        margin: 30px;
+        height: 200px;
+    }
+   
+    .presentacion{
+        display: grid;
+        grid-template-columns:300px;
+        justify-content: center;
+        background-color: #b7b5ff;
+        text-align: center;
+        margin: 20px;
+    }
+    .tarjeta-de-contacto{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto 1fr;
+        grid-template-areas: 
+        "imagen-costi contacto";
+        border-style:none;
+        margin: 20px
+        }
+        .contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        }
+        .imgCosti{
+            grid-area: "imagen-costi";
+            width: 100px;
+            height: 150px;
+            margin: 10px;
+        }
+        .imgInstagram{
+            grid-area: contacto;
+            position: relative;
+            margin-left: 50px;
+            width: 50px;
+            height: 50px;
+        }  
+}
+ @media only screen and (min-width:501px) and (max-width:768px) {
+header{
+    margin: 40px;
+}
+    .nav-margin{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.logo{
+    height:70px;
+    position:absolute;
+    margin-left: 300px;
+    margin-bottom: 10px;
+}
+.imgPortada{
+    margin: 75px;
+}
+img{
+    max-width: 600px;
+    max-height: 500px;
+}
+.presentacion{
+    display: grid;
+    grid-template-columns:600px;
+    justify-content: center;
+    background-color: #b7b5ff;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.tarjeta-de-contacto{
+position: relative;
+max-width: 500px;
+max-height: 300px ;
+display: grid;
+grid-template-columns:1fr;
+grid-template-rows:auto 1fr;
+grid-template-areas: 
+"imagen-costi contacto";
+}
+
+.contenido{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.imgCosti{
+    grid-area: "imagen-costi";
+    width: 250px;
+    height: 300px;
+}
+.imgInstagram{
+    grid-area: contacto;
+    position: relative;
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+}
+ }
+ @media only screen and (min-width:769px) {
+    .posicion-navbar{
+        margin-right: 100px;
+    }
+    .nav-margin{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .logo{
+        height:70px;
+    }
+    .imgPortada{
+        margin: 75px;
+    }
+    img{
+        max-width: 600px;
+        max-height: 500px;
+    }
+    .presentacion{
+        display: grid;
+        grid-template-columns:600px;
+        justify-content: center;
+        background-color: #b7b5ff;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .instagram{
+        margin-bottom: 100px;
+    }
+    .tarjeta-de-contacto{
+    position: relative;
+    max-width: 500px;
+    max-height: 300px ;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows:auto 1fr;
+    grid-template-areas: 
+    "imagen-costi contacto";
+    margin-top: 25px;
+    margin-bottom: 50px;
+    }
+    .contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    .imgCosti{
+        grid-area: "imagen-costi";
+        width: 250px;
+        height: 300px;
+    }
+    .imgInstagram{
+        grid-area: contacto;
+        position: relative;
+        margin-left: 50px;
+        width: 50px;
+        height: 50px;
+    }
+}
+ 

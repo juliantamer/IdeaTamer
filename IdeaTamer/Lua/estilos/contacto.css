@@ -1,0 +1,42 @@
+body{
+    background-color: #b7b5ff;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "logo navbar";
+    background-color: white;
+}
+.a-color{
+    color: #b7b5ff;
+   text-decoration-color: #b7b5ff;
+   text-decoration: solid;
+}
+.logo-r{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.logo{
+    height:50px;
+}
+main{
+    background-color: #b7b5ff;
+}
+.b-color{
+    background-color: #b7b5ff;
+}
+@media only screen and (min-width:501px) and (max-width:768px){ 
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    @media only screen and (min-width:769) {
+        main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+}

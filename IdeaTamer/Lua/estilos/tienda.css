@@ -1,0 +1,77 @@
+.a-color{
+    color: #b7b5ff;
+   text-decoration-color: #b7b5ff;
+   text-decoration: solid;
+}
+header{
+    background-color: white;
+}
+.logo-r{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.logo{
+    height:50px;
+}
+.margen{
+    margin: 10px;
+}
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr, 1fr, 1fr ;
+        justify-items: center;
+        background-color: #b7b5ff;
+    }
+    .alineado{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .margen{
+        margin: 10px;
+    }
+    .alineado{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+@media only screen and (min-width:501px) and (max-width:768px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr,1fr;
+        grid-template-rows: 1fr,1fr;
+        grid-template-areas: 
+        "producto-1 producto-2"
+        "producto-3 producto-4";
+        background-color: #b7b5ff;
+    }
+}
+@media only screen and (min-width:769px) {
+    header{
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-areas: "logo navbar";
+        background-color: white;
+    }
+    .posicion-navbar{
+        margin-right: 100px;
+    }
+    .nav-margin{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    .logo{
+        height:70px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr,1fr, 1fr;
+        grid-template-rows: 1fr,1fr;
+        grid-template-areas: 
+        "producto-1 producto-2 producto-3";
+        background-color: #b7b5ff;}
+}
